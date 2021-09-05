@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <title>Aashi's Todo List Web App</title>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <h2 style="margin:5px">To Do List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+
+    <ul id="myUL">
+        <li class="checked">Task 8 SIG WEB</li>
+        <li>Read a book </li>
+        <li class="checked">Complete class assignments</li>
+        <li>Create Android Studio Project</li>
+        <li class="checked"> Quiz Test</li>
+        <li>Complete one module</li>
+
+    </ul>
+    <button type="button" id="clear-list" onclick="removeAll()">Clear Items</button>
+    <script src="./script.js"></script>
+
+
+
+
+
+</body>
+
+</html>

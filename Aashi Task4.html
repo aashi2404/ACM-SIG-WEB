@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <style>
+        .mydiv {
+            background-image: url("./pics/read2.jpeg");
+            background-repeat: no-repeat;
+            background-size: 1537px 722px;
+            height: 100vh;
+            color: white;
+            font-family: 'Mate SC', serif;
+            margin: -8px -8px;
+            padding: 2px 1px;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+            color: white;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 3px 13px;
+        }
+        
+        .navbar li a {
+            padding: 0px 3px;
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        
+        .navbar div {
+            float: right;
+            font-weight: bold;
+            margin: -68px 42px;
+            font-size: 55px;
+        }
+        
+        .navbar p {
+            float: right;
+            margin: -15px 54px;
+        }
+        
+        .container {
+            text-align: right;
+            font-size: 95px;
+            margin: 105px 4px;
+            padding: 5px 5px;
+            color: #ffbc00;
+        }
+        
+        .container p {
+            margin: 5px 43px;
+            padding: 5px 5px
+        }
+        
+        .new {
+            background-color: #825e3c;
+            height: 200vh;
+            margin: 5px -8px;
+            padding: 114px 11px;
+        }
+        
+        .head {
+            text-align: center;
+            margin: 3px 3px;
+            padding: 3px 3px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-gap: 50px 30px;
+            grid-template-columns: 250px 250px 250px;
+            /* background-color: #825e3c; */
+            padding: 10px;
+        }
+        
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 4px solid rgba(0, 0, 0, 0.8);
+            height: 180px;
+            /*width: 250px; */
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .grid-item img {
+            transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+            transition: 0.4s ease-in-out transform;
+        }
+        
+        .grid-item img:hover {
+            transform: translate3d(0px, 0px, -250px);
+        }
+        
+        .grid-item p {
+            font-size: 20px;
+            margin: 0px 3px;
+            padding: 1px 3px;
+        }
+        
+        .box {
+            float: right;
+            width: 481px;
+            height: 280px;
+            margin: -405px 90px;
+            padding: 3px 3px;
+            background-color: #ffbc00;
+            border: 2px solid black;
+            box-shadow: 30px 30px rgba(255, 255, 255, 0.8);
+            font-size: 40px;
+            text-align: center;
+        }
+        
+        #brows {
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            width: 273px;
+            margin: -20px 105px;
+            text-shadow: 2px 2px 5px red;
+        }
+        /* h1 {
+            text-align: center;
+            margin: 3px 3px;
+            padding: 3px 3px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="mydiv">
+
+        <header class="header">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#" class="active"> About </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Catalogue</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active"> Read </a>
+                    </li>
+                    <li>
+                        <a href="#" class="active"> Contact </a>
+                    </li>
+
+                </ul>
+
+                <div class="right">
+                    One Read
+                </div>
+                <p> all you need under one roof</p>
+            </nav>
+
+
+        </header>
+
+        <div class="container">
+            <p>
+                A book is a dream</p>
+            <p> that you hold in
+            </p>
+            <p> your hands </p>
+        </div>
+    </div>
+
+
+    <div class="new">
+        <div class="head">
+
+            <h1> EXPLORE HERE FOR MORE </h1>
+        </div>
+
+
+        <div class="grid-container">
+
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/romantic.jpg" alt="romance" height="165px" width="105px">
+                </center>
+                <p>ROMANTIC</p>
+            </div>
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/horror.jfif" alt="horror" height="165px" width="105px">
+                </center>
+                <p>HORROR</p>
+            </div>
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/self.jpg" alt="self-help" height="165px" width="105px">
+                </center>
+                <p>SELF-HELP</p>
+            </div>
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/sci.jpg" alt="sci-fi" height="165px" width="105px">
+                </center>
+                <p>SCIENCE-FICTION</p>
+
+            </div>
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/suspense.jpg" alt="suspense" height="165px" width="105px">
+                </center>
+                <p>SUSPENSE</p>
+            </div>
+            <div class="grid-item">
+                <center>
+                    <img src="./pics/bio.jpg" alt="bio" height="165px" width="105px">
+                </center>
+                <p> BIOGRAPHY </p>
+            </div>
+        </div>
+        <div class="box">
+            <p> GET YOUR FAVOURITE BOOK IN YOUR FAVOURITE LANGUAGE</p>
+            <p id="brows">
+                BROWSE NOW
+            </p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

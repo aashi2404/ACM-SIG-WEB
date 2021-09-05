@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h3>Program to find leap year</h3>
+    <input type="text" id="year">
+
+    <button onclick="check_leapyear()">Check</button>
+    <script>
+        function check_leapyear() {
+
+            var year;
+
+
+            year = document.getElementById("year").value;
+
+
+            if ((0 == year % 4) && (0 != year % 100) || (0 == year % 400)) {
+                alert(year + " is a leap year");
+            } else {
+                alert(year + " is not a leap year");
+            }
+        }
+    </script>
+    <h3>PROGRAM FOR PERFORMING ARITHMETIC OPERATION ON 2 NUMBERS ACCORDING TO INPUT OPERATOR.</h3>
+    <script>
+        var numOne = 40,
+            numTwo = 20,
+            res;
+        res = numOne + numTwo;
+        document.write("Add = " + res + "<br/>");
+        res = numOne - numTwo;
+        document.write("Subtract = " + res + "<br/>");
+        res = numOne * numTwo;
+        document.write("Multiply = " + res + "<br/>");
+        res = numOne / numTwo;
+        document.write("Divide = " + res + "<br/>");
+    </script>
+
+
+
+    <h3> PROGRAM TO PASS A FUNCTION AS PARAMETER.</h3>
+    <button onclick="outer_para (inner_para)"> 
+        Click Here 
+    </button>
+
+    <script>
+        function inner_para(value) {
+            return 'Aashi Gupta!';
+        }
+
+        function outer_para(func) {
+            alert(func());
+        }
+    </script>
+
+    <h3> PROGRAM TO MERGE TWO ARRAYS AND REMOVE DUPLICATE ITEMS.</h3>
+    <script>
+        let array1 = ['a', 'b', 'c']
+        let array2 = ['c', 'c', 'd', 'e'];
+        let array3 = [];
+        for (let i = 0; i < array1.length; i++) {
+            if (array3.indexOf(array1[i]) == -1)
+                array3.push(array1[i])
+        }
+        for (let i = 0; i < array2.length; i++) {
+            if (array3.indexOf(array2[i]) == -1)
+                array3.push(array2[i])
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
